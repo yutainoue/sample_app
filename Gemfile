@@ -19,10 +19,16 @@ group :development do
   gem 'listen',                '3.0.8'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
+
+  ## pry
   gem 'pry-rails'  # rails console(もしくは、rails c)でirbの代わりにpryを使われる
   gem 'pry-doc'    # methodを表示
   gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作する)
   gem 'pry-stack_explorer' # スタックをたどれる
+
+  ## rspec
+  gem "rspec-rails", "~> 3.1.0"
+  gem "factory_girl_rails", "~> 4.4.1"
 end
 
 group :test do
@@ -30,6 +36,13 @@ group :test do
   gem 'minitest-reporters',       '1.1.14'
   gem 'guard',                    '2.13.0'
   gem 'guard-minitest',           '2.4.4'
+
+  ## rspec
+  gem "faker", "~> 1.4.3"
+  gem "capybara", "~> 2.4.3"
+  gem "database_cleaner", "~> 1.3.0"
+  gem "launchy", "~> 2.4.2"
+  gem "selenium-webdriver", "~> 2.43.0"
 end
 
 group :production do
