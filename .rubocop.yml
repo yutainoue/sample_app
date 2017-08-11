@@ -1,0 +1,7 @@
+# 日本語コメントを許可する
+AsciiComments:
+  Enabled: false
+
+# ドキュメントコメントのないクラス定義を許可する
+Style/Documentation:
+  Enabled: false
