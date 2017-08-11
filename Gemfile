@@ -12,6 +12,12 @@ gem 'uglifier',     '3.2.0'
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
   gem 'sqlite3', '1.3.13'
+
+  ## pry
+  gem 'pry-byebug'         # デバッグを実施(Ruby 2.0以降で動作する)
+  gem 'pry-doc'            # methodを表示
+  gem 'pry-rails'          # rails console(もしくは、rails c)でirbの代わりにpryを使われる
+  gem 'pry-stack_explorer' # スタックをたどれる
 end
 
 group :development do
@@ -19,12 +25,6 @@ group :development do
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
   gem 'web-console',           '3.5.1'
-
-  ## pry
-  gem 'pry-byebug'         # デバッグを実施(Ruby 2.0以降で動作する)
-  gem 'pry-doc'            # methodを表示
-  gem 'pry-rails'          # rails console(もしくは、rails c)でirbの代わりにpryを使われる
-  gem 'pry-stack_explorer' # スタックをたどれる
 
   ## rspec
   gem 'factory_girl_rails', '~> 4.4.1'
