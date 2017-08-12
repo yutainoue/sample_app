@@ -7,7 +7,7 @@ RSpec.describe StaticPagesController, type: :controller do
     before { get :home }
 
     it '表示に成功する' do
-      assert_select 'title', "Home | #{base_title}"
+      assert_select 'title', base_title.to_s
       expect(response).to have_http_status(:success)
     end
   end
