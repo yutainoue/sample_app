@@ -7,6 +7,12 @@ RSpec.describe User, type: :model do
         user = User.new(name: 'Example User', email: 'user@example.com')
         expect(user).to be_valid
       end
+
+      it 'emailは小文字に変換されて保存される' do
+        user = User.new(name: 'Example User', email: 'HOGE@example.com')
+        user.save
+        expect(User.find(user.id).email).to eq 'hoge@example.com'
+      end
     end
 
     describe '無効なuser' do
