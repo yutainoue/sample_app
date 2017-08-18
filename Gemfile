@@ -35,7 +35,7 @@ group :test do
   gem 'rails-controller-testing', '1.0.2'
 
   ## rspec
-  gem 'capybara',           '~> 2.4.3'
+  gem 'capybara',           '~> 2.14.4'
   gem 'database_cleaner',   '~> 1.3.0'
   gem 'factory_girl_rails', '~> 4.4.1'
   gem 'faker',              '~> 1.4.3'
