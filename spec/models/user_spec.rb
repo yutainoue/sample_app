@@ -78,4 +78,18 @@ RSpec.describe User, type: :model do
       end
     end
   end
+
+  describe 'create' do
+    it '有効なユーザの場合、保存に成功する' do
+      expect {
+        post :create, user: attributes_for(:user)
+      }.to change(User, :count).by(1)
+    end
+
+    it '無効なユーザの場合、保存に失敗する' do
+      expect {
+        post :create, user: attributes_for(:user, name: '')
+      }.to_not change(User, :count)
+    end
+  end
 end

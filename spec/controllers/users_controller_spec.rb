@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
-  describe 'home' do
+  describe 'new' do
     before { get :new }
 
     it '表示に成功する' do
