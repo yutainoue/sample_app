@@ -10,6 +10,8 @@ gem 'rails',        '5.0.3'
 gem 'sass-rails',   '5.0.6'
 gem 'turbolinks',   '5.0.1'
 gem 'uglifier',     '3.2.0'
+gem 'travis' # CIツール
+gem 'travis-lint' # travis.ymlのlinter
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
