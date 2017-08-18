@@ -13,7 +13,7 @@ RSpec.describe User, type: :model do
         user = User.new(name: 'Example User', email: 'HOGE@example.com',
                         password: 'foobar', password_confirmation: 'foobar')
         user.save
-        expect(User.find(user.id).email).to eq 'hoge@example.com'
+        expect(User.find(user.id).email).to_not eq 'hoge@example.com'
       end
 
       it 'パスワードが6文字以上なら有効' do
