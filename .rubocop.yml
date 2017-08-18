@@ -9,3 +9,7 @@ Style/Documentation:
 # 一行は50文字まで
 Metrics/BlockLength:
   Max: 50
+
+# 改行するブロックで{}を使っても良い
+Style/BlockDelimiters:
+  Enabled: false
