@@ -1,20 +1,23 @@
 source 'https://rubygems.org'
 
-gem 'bcrypt',         '3.1.11' # ハッシュ関数
-gem 'bootstrap-sass', '3.3.7'
+gem 'bcrypt',                  '3.1.11' # ハッシュ関数
+gem 'bootstrap-sass',          '3.3.7'
 gem 'bootstrap-will_paginate', '1.0.0'
-gem 'coffee-rails', '4.2.2'
-gem 'faker', '1.7.3'
-gem 'jbuilder', '2.6.1'
-gem 'jquery-rails', '4.3.1'
-gem 'puma',         '3.9.1'
-gem 'rails',        '5.0.3'
-gem 'sass-rails',   '5.0.6'
-gem 'travis' # CIツール
+gem 'coffee-rails',            '4.2.2'
+gem 'faker',                   '1.7.3'
+gem 'jbuilder',                '2.6.1'
+gem 'jquery-rails',            '4.3.1'
+gem 'puma',                    '3.9.1'
+gem 'rails',                   '5.0.3'
+gem 'sass-rails',              '5.0.6'
+gem 'travis'      # CIツール
 gem 'travis-lint' # travis.ymlのlinter
-gem 'turbolinks',   '5.0.1'
-gem 'uglifier',     '3.2.0'
-gem 'will_paginate', '3.1.5'
+gem 'turbolinks',              '5.0.1'
+gem 'uglifier',                '3.2.0'
+gem 'will_paginate',           '3.1.5'
+gem 'carrierwave',             '1.1.0'
+gem 'mini_magick',             '4.7.0'
+gem 'fog',                     '1.40.0'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
